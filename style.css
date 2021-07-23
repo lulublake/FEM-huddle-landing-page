@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    width: 300px;
+    margin-top: 20px;
+}
+#image1{
+    width: 120px;
+    align-self: baseline;
+    margin: 30px 0 30px 0;
+}
+#image2{
+    margin-top: 20px;
+    height: 200px;
+    width: 300px;
+}
+h1{
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.3em;
+    width: 280px;
+    text-align: center;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: rgb(197, 197, 197);
+    font-size: 0.8em;
+    width: 240px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+button{
+    padding: 12px 60px;
+    border-radius: 30px;
+    border: 0;
+    color: hsl(257, 40%, 49%);
+    margin: 40px 20px;
+    box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.394);
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: solid 2px white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 5px rgba(56, 56, 56, 0.245);
+}
+.second-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+.icons{
+    width: 130px;
+    display: flex;
+    margin: auto;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+svg{
+    margin: 10px 10px 30px 10px;
+    fill: white;
+}
+
+
+
+@media(min-width: 1440px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        background-color: hsl(257, 40%, 49%);
+        background-image: url("images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-start;
+        justify-content: space-between;
+        width: 50vw;
+        height: 85vh;
+        margin-top: 20px;
+    }
+    .second-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: max-content;
+        width: 600px;
+        height: 75vh;
+        margin-left: 40px;
+        align-self: flex-end;
+        text-align: left;
+        position: relative;
+    }
+    #image1{
+        width: 200px;
+        align-self: baseline;
+        margin: 30px 0 30px 0;
+        justify-self: start;
+    }
+    #image2{
+        margin-top: 20px;
+        height: 500px;
+        width: auto;
+    }
+    h1{
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 2em;
+        width: 400px;
+        text-align: left;
+    }
+    p{
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+        color: rgb(197, 197, 197);
+        font-size: 1em;
+        width: 400px;
+        font-weight: 400;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    button{
+        padding: 15px 70px;
+        border-radius: 30px;
+        border: 0;
+        color: hsl(257, 40%, 49%);
+        margin: 0px 0px 20px;
+        align-self: flex-start;
+        font-size: 17px;
+    }
+    .icons{
+        width: 130px;
+        display: flex;
+        margin: auto;
+        height: 100px;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-self: flex-end;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    footer{
+        position: absolute;
+        bottom: 1rem;
+    }
+}
